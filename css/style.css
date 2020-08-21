@@ -1,0 +1,648 @@
+:root {
+  --red-color: #ff003c;
+  --black-color: #070707;
+  --white-color: #ffffff;
+  --font-family: 'Barlow', sans-serif;
+}
+
+body,html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: outrun future 'san serif';
+    height: auto/*3754px*/;
+}
+/*nav*/
+.menuhh{
+    position: fixed;
+    width: 100%;
+/*    height: 130px;*/
+    z-index: 2;
+    transition: all 0.5s ease-in-out;
+}
+.menu-btn {
+  position: fixed;
+   right: 0;    
+    right: 20px;
+    top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  /* border: 3px solid #fff; */
+}
+.menu-btn__burger {
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}
+.menu-btn__burger::before {
+  transform: translateY(-16px);
+}
+.menu-btn__burger::after {
+  transform: translateY(16px);
+}
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+.nav{
+    position: absolute;
+    width: 600px;
+    height: 50px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    transition: all .5s ease-in-out;
+}
+.nav.show{
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+.nav ul{
+    display: flex
+}
+.nav ul li{
+    margin-right: 30px;
+    list-style: none;
+}
+.nav ul li a{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: outrun future;
+    line-height: 50px;
+    text-decoration: none;
+}
+/*sec1*/
+section.Sec1{
+    height: 100vh;
+    background: url(../images/img1.png);
+    background-size: cover;
+    overflow: hidden
+}
+section.Sec1 .overlay{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    opacity: .8;
+    overflow: hidden;
+    background-image: url(../images/Barmy%20bg.png);
+    background-size: cover no-repeat;
+}
+section.Sec1 .booymj{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;}
+section.Sec1 .booymj .booymjb{
+    position: absolute;
+    margin-top: -110px;
+    z-index: -1;
+}
+section.Sec1 .overlay .one .boxa{
+    position: absolute;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    text-align: center;
+}
+section.Sec1 .overlay .one .boxa .barmy{
+    height: 100%;
+    background-image: url(../images/barmmy.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: outrun future;
+    font-size: 300px;
+    line-height: 50px;
+    overflow: hidden;
+    text-align: center;
+    -webkit-background-clip:text;
+    color: transparent;
+    position: absolute;
+    padding-top: 10%;
+    padding-left: 35%;
+    transform: translate(-10%, 0%);
+}
+section.Sec1 .overlay .one .boxa .crew{   
+    height: 100%;
+    background-image: url(../images/barmmy.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+    text-align: center;
+    -webkit-background-clip: text;
+    line-height: 50px;
+    color: transparent;
+    font-family: outrun future;
+    position: absolute;
+    font-size: 48px;
+    padding-top: 27%;
+    padding-left: 50%;
+    transform: translate(-15%, 0%);
+}
+section.Sec1 .overlay .one .boxb{
+    position: absolute;
+    position: absolute;
+    margin-top: 80vh;
+    margin-left: 50%;
+    transform: translate(-50%, 0)
+}
+section.Sec1 .overlay .one .boxb a{
+    color: #fff;
+    font-family: outrun future;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+section.Sec1 .overlay .one .boxb a:hover{
+    height: 100%;
+    background-image: url(../images/barmmy.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+    text-align: center;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+section.Sec1 .overlay .one {
+    height: 85vh;
+}
+section.Sec1 .overlay .two{
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+/*    background: red;*/
+}
+
+/*sec 2*/
+section.sec2{
+    height: 100vh;
+    background: #000;
+    background-size: cover;
+}
+section.sec2 .jj .jhj{
+height: 100vh;
+background: #000;
+} 
+section.sec2 .jj .jhj .imgbx .imj{
+    width: 95%;
+    position: absolute;
+    left: 0;
+}
+section.sec2 .jj .jhj .imgbx .img img{
+    padding-top: 100px;
+    padding-left: 250px;
+    width: 100%;
+}
+section.sec2 .jj .jhj .imgbx .img2 img{
+    top: -281px;
+    position: relative;
+}
+section.sec2 .jj .gbb{
+height: 100vh;
+background: #000;
+}
+section.sec2 .jj .gbb .text{
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%);
+} 
+section.sec2 .jj .gbb .text .text1{
+    position: relative;
+    left: -100px;
+    padding-bottom: 20px;
+}
+section.sec2 .jj .gbb .text .text2{
+    position: absolute;
+    left: -25%;
+    width: 350px;
+}
+section.sec2 .jj .gbb .text .head h4{
+    color: #95a7ff;
+    font-family: outrun future;
+    font-size: 24px;  
+}
+section.sec2 .jj .gbb .text .text1 h1{
+    color: #ffffff;
+    font-family: outrun future;
+    font-size: 60px;  
+}
+section.sec2 .jj .gbb .text .text2 p{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 16px;  
+}
+
+/*sec 3*/
+section.sec3{
+    height: 100vh;
+    background: #000000;
+}
+.image-slider .swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+.image-slider .swiper-slide .wrapper {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.image-slider .swiper-slide .img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.image-slider .swiper-slide .sub-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-weight: 900;
+  margin-bottom: -30px;
+
+}
+.image-slider .swiper-slide .title {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+.image-slider .swiper-slide .description {
+  color: var(--white-color);
+  font-size: 1rem;
+  text-align: justify;
+}
+.image-slider .controls {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 20px;
+}
+.image-slider .ctrl {
+  height: 60px;
+  width: 60px;
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+  border-radius: 500px;
+  background-image: none;
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  margin: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: 0;
+  -webkit-transition: all ease 0.1s;
+  transition: all ease 0.1s;
+}
+.image-slider .ctrl:hover {
+  color: var(--black-color);
+  background-color: var(--white-color);
+}
+.image-slider .ctrl.next-ctrl {
+  margin-left: 20px;
+}
+.image-slider .text-wrapper {
+  overflow: hidden;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.image-slider .text-wrapper .text-inner {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+/*active states*/
+.image-slider .swiper-slide-active.active .text-inner {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+/*delays*/
+.image-slider .swiper-slide.active .sub-title .text-inner {
+  -webkit-transition-delay: 0.05s;
+          transition-delay: 0.05s;
+}
+.image-slider .swiper-slide.active .title .text-inner {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+.image-slider .swiper-slide.active .description .text-inner {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+
+/*sec4*/
+section.sec4{
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../images/img11.png);
+    }
+section.sec4 .overlay{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    opacity: 60%;
+    overflow: hidden;
+    background: #000000;
+    text-align: center;
+}
+section.sec4 .overlay .textx{
+    position: absolute;
+    width: 460px;
+    height: 300px;
+    text-align: center;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -30%);
+}
+section.sec4 .overlay .textx .head{
+    height: 100%;
+    background-image: url(../images/img12.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+    text-align: center;
+    -webkit-background-clip: text;
+    line-height: 50px;
+    color: transparent;
+    font-family: outrun future;
+    position: absolute;
+    font-size: 60px;
+}
+section.sec4 .overlay .textx .join{
+    background-image: url(../images/img14.png);
+    position: absolute;
+    width: 230px;
+    height: 40px;
+    line-height: 2;
+    margin-top: 50pxx;
+    margin-top: 100px;
+    left: 50%;
+    transform: translate(-50%, 10px);
+}
+section.sec4 .overlay .textx .join a{
+    font-family: outrun future;
+    color: #ff4e3e;
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+section.sec4 .overlay .foot{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    height: 100px;
+}
+section.sec4 .overlay .foot .follow{
+    width: 200px;
+    padding: 0;
+    margin: 0;
+}
+section.sec4 .overlay .foot .follow ul{
+    display: flex
+}
+section.sec4 .overlay .foot .follow ul li{
+   padding: 20px;
+    list-style: none;
+}
+section.sec4 .overlay .foot .follow ul li a{
+    color: #fff;
+    font-size: 30px;
+    transition: 0.5s ease-in-out;
+}
+section.sec4 .overlay .foot .follow ul li a:hover{
+    color: #ff4e3e;
+}
+section.sec4 .overlay .foot .txt{
+    text-align: center;
+    align-items: center;
+    width: 200px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-51%, 0);
+}
+section.sec4 .overlay .foot .txt p{
+ color:  #ffffff;
+    font-size: 18px;
+ font-family: outrun future;
+    
+}
+
+
+
+
+@media (max-width:768px){
+    /*sec1*/
+    .menuhh.active {
+    height: 100vh;
+    opacity: 0.9;
+    background-color: #000;
+    z-index: 1;
+}
+    .menu-btn{
+        z-index: 1;
+    }
+    .nav{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: -60%;
+    transform: translate(-60%, 60%);
+    transition: all .5s ease-in-out;
+    }
+    .nav.show{
+        left: 0;
+        transform: translate(0, 60%);
+    }
+    .nav ul{
+        display: inline-block;
+        width:100%;
+        text-align: center;
+    }
+    .nav ul li{
+        margin-bottom: 60px;
+        width: 100%;
+    }
+    
+section.Sec1{
+    height: 100vh;
+    background: url(../images/img1.png);
+    background-size: cover;
+}
+section.Sec1 .overlay .one .boxa{
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    margin-top: 100px;
+    text-align: center;
+}
+section.Sec1 .overlay .one .boxa .barmy{
+    font-size: 60px;
+    margin-top: 20vh;
+}
+section.Sec1 .overlay .one .boxa .crew{
+    font-size: 20px;
+    padding-top: 300px;
+    padding-left: 50%;
+    transform: translate(-25%, 0%)
+}
+section.Sec1 .overlay .one .boxb{
+    position: absolute;
+    margin-top: 85vh;
+    margin-left: 50%;
+    transform: translate(-50%, 10px)
+}
+section.Sec1 .overlay .one .boxb a{
+    color: #fff;
+    font-family: outrun future;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+section.Sec1 .overlay .one .boxb a:hover{
+    height: 100%;
+    background-image: url(../images/barmmy.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+    text-align: center;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+    
+    /*sec2*/
+section.sec2{
+    height: 80vh;
+    overflow: hidden;
+}
+section.sec2 .jj .jhj{
+    height: 80vh;
+    overflow: hidden;
+} 
+section.sec2 .jj .jhj .imgbx .imj{
+    width: 115%;
+}
+section.sec2 .jj .jhj .imgbx .img img{
+    padding: 0;
+    width: 450px
+}
+section.sec2 .jj .jhj .imgbx .img2 img{
+    width: 350px;
+    margin-left: 50%;
+    margin-top: 185px;
+}
+section.sec2 .jj .gbb{
+height: auto;
+}
+section.sec2 .jj .gbb .text{
+    transform: translate(100px, -260%);
+} 
+section.sec2 .jj .gbb .text .text1{
+    left: -100px;
+    padding-bottom: 20px;
+}
+section.sec2 .jj .gbb .text .text2{
+    transform: translate(-60px, 10px);
+    width: 360px;
+}
+section.sec2 .jj .gbb .text .head h4{
+    font-size: 24px;  
+}
+section.sec2 .jj .gbb .text .text1 h1{
+    font-size: 50px;  
+}
+    
+    
+    /*sec3*/
+    
+
+    
+    
+    /*sec4  */    
+    
+    section.sec4 .overlay .textx .head {
+    font-size: 49px;
+}
+/*
+    section.sec4 .overlay .foot .txt p {
+        font-size: 14px;}
+*/
+    section.sec4 .overlay .foot .follow {
+    margin-top: -150px;
+    position: absolute;
+    left: 40%;
+        transform: translate(-40%, 0);}
+     /*sec5  */
+    
+    /*sec6  */
+    
+    /*sec8*/
+    
+    
+    }
+    
+    
+    
+    
